@@ -24,34 +24,24 @@
     android:pathData="M6,6h4v6H6z" />
 
     <!-- Train Headlight -->
-    <circle
+    <path
         android:fillColor="#FFEB3B"
-    android:cx="6"
-    android:cy="10"
-    android:r="2" />
+    android:pathData="M6,10a2,2 0 1,0 0,4a2,2 0 1,0 0,-4z" />
 
     <!-- Train Wheels -->
-    <circle
+    <path
         android:fillColor="#000000"
-    android:cx="12"
-    android:cy="34"
-    android:r="4" />
-    <circle
+    android:pathData="M12,34a4,4 0 1,0 0,1a4,4 0 1,0 0,-1z" />
+    <path
         android:fillColor="#000000"
-    android:cx="36"
-    android:cy="34"
-    android:r="4" />
+    android:pathData="M36,34a4,4 0 1,0 0,1a4,4 0 1,0 0,-1z" />
 
     <!-- Wheel Highlights -->
-    <circle
+    <path
         android:fillColor="#FFFFFF"
-    android:cx="12"
-    android:cy="34"
-    android:r="2" />
-    <circle
+    android:pathData="M12,34a2,2 0 1,0 0,1a2,2 0 1,0 0,-1z" />
+    <path
         android:fillColor="#FFFFFF"
-    android:cx="36"
-    android:cy="34"
-    android:r="2" />
+    android:pathData="M36,34a2,2 0 1,0 0,1a2,2 0 1,0 0,-1z" />
 
 </vector>
