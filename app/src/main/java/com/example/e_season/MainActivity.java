@@ -10,9 +10,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main); // Check if this layout file exists
 
-        Button loginButton = findViewById(R.id.loginButton);
+        Button loginButton = findViewById(R.id.loginButton); // Ensure the ID is correct in the XML
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
