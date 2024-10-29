@@ -2,8 +2,17 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:background="#FFFFFF">
+    android:padding="0dp">
+
+    <!-- Background GIF ImageView -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:contentDescription="Background Image"
+        android:background="@null"
+        android:padding="0dp"/>
 
     <!-- App Logo -->
     <ImageView
@@ -22,6 +31,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/logoImageView"
         android:layout_marginTop="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/edit_text_background"
         android:drawableLeft="@drawable/ic_user"
         android:drawablePadding="10dp"
@@ -37,6 +48,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/usernameEditText"
         android:layout_marginTop="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/edit_text_background"
         android:drawableLeft="@drawable/ic_lock"
         android:drawablePadding="10dp"
@@ -52,6 +65,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/passwordEditText"
         android:layout_marginTop="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:backgroundTint="#4CAF50"
         android:text="Login"
         android:textColor="#FFFFFF"
@@ -65,6 +80,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/loginButton"
         android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:background="@drawable/google_button_background"
         android:orientation="horizontal"
         android:gravity="center"
@@ -85,17 +102,16 @@
             android:textSize="18sp"/>
     </LinearLayout>
 
-
-    <!-- Register Link -->
+        <!-- Register Link -->
     <TextView
-        android:id="@+id/registerLink"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/googleLoginContainer"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:text="Don’t have an account? Register"
-        android:textColor="#1E88E5"
-        android:textSize="16sp" />
+    android:id="@+id/registerLink"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/googleLoginContainer"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:text="Don’t have an account? Register"
+    android:textColor="#FFFFFF"
+    android:textSize="16sp" />
 
-</RelativeLayout>
+    </RelativeLayout>
