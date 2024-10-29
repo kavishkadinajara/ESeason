@@ -5,6 +5,7 @@
     android:padding="16dp"
     android:background="#FFFFFF">
 
+    <!-- App Logo -->
     <ImageView
         android:id="@+id/logoImageView"
         android:layout_width="193dp"
@@ -14,66 +15,87 @@
         android:contentDescription="App Logo"
         android:src="@drawable/train_animation" />
 
+    <!-- Username Field -->
     <EditText
         android:id="@+id/usernameEditText"
-        android:layout_width="357dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/logoImageView"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:background="@drawable/edit_text_background"
         android:drawableLeft="@drawable/ic_user"
         android:drawablePadding="10dp"
         android:hint="Username"
         android:inputType="text"
-        android:padding="12dp" />
+        android:padding="12dp"
+        android:textSize="16sp"/>
 
+    <!-- Password Field -->
     <EditText
         android:id="@+id/passwordEditText"
-        android:layout_width="357dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/usernameEditText"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
         android:background="@drawable/edit_text_background"
         android:drawableLeft="@drawable/ic_lock"
         android:drawablePadding="10dp"
         android:hint="Password"
         android:inputType="textPassword"
-        android:padding="12dp" />
+        android:padding="12dp"
+        android:textSize="16sp"/>
 
+    <!-- Login Button -->
     <Button
         android:id="@+id/loginButton"
-        android:layout_width="wrap_content"
-        android:layout_height="62dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/passwordEditText"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:backgroundTint="#4CAF50"
         android:text="Login"
-        android:textColor="#FFFFFF" />
+        android:textColor="#FFFFFF"
+        android:padding="16dp"
+        android:textSize="18sp" />
 
-    <Button
-        android:id="@+id/loginWithGoogleButton"
-        android:layout_width="357dp"
-        android:layout_height="58dp"
+    <!-- Google Login Button with Logo -->
+    <LinearLayout
+        android:id="@+id/googleLoginContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/loginButton"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:backgroundTint="#DB4437"
-        android:drawablePadding="10dp"
-        android:text="Login with Google"
-        android:textColor="#FFFFFF" />
+        android:background="@drawable/google_button_background"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="12dp">
 
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/google_logo"
+            android:contentDescription="Google Logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Login with Google"
+            android:textColor="#4285F4"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+
+    <!-- Register Link -->
     <TextView
         android:id="@+id/registerLink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/loginWithGoogleButton"
+        android:layout_below="@id/googleLoginContainer"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:text="Don’t have an account? Register"
         android:textColor="#1E88E5"
-        android:textSize="16sp"/>
+        android:textSize="16sp" />
 
 </RelativeLayout>

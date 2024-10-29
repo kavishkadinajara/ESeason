@@ -1,0 +1,6 @@
+<!-- res/drawable/google_button_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF" /> <!-- White background -->
+    <stroke android:width="2dp" android:color="#4285F4" /> <!-- Blue border -->
+    <corners android:radius="50dp" /> <!-- Rounded corners (full) -->
+</shape>
